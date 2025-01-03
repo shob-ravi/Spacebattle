@@ -3,6 +3,7 @@ const topContainerEl = document.querySelector(".topContainer");
 const alienShipEl = document.querySelector(".alienShip");
 const hShipEl = document.getElementById("hShip");
 let aShipEl = document.getElementById("aShip");
+let xVelocity =0;
 
 const startGameBtnEl = document.getElementById("startGameBtn");
 const textContentEl = document.getElementById("textContent");
@@ -28,3 +29,30 @@ startGameBtnEl  .addEventListener("click",function()
     hShipEl.style.left = hShipElWidth+'px';
     
 });
+function PositionUpdate(xVelocity){
+    let newPosition = parseInt(hShipEl.style.left);
+    console.log("console.log(newPosition)",newPosition);
+    // xVelocity = xVelocity+'px';
+    console.log('xVelocity',xVelocity);
+    newPosition+= xVelocity;
+    console.log(newPosition);
+    hShipEl.style.left = newPosition+'px';
+    
+}
+addEventListener('keydown',(event)=>{
+    console.log(event);
+    switch(event.key)
+    {
+        case 'a':
+            console.log('left');
+            PositionUpdate(-5);
+            break
+        case 'd':
+            console.log('right');
+            break
+        case ' ':
+            console.log('space bar');
+            break
+        
+    }
+})
