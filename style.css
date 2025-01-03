@@ -7,29 +7,40 @@ height:100vh;
     border:solid green;
     height:60%;
 }
+.alienShip{
+    height:40%;
+    width:100%;
+    border:solid brown;
+}
+.humanShip{
+    height:60%; 
+    width:100%;
+    border:solid brown;
+}
 .bottomContainer{
     border:solid black;
-    height:39%;
-    text-align: center;    
+    height:29%;
+    text-align: center;  
+    margin-top: 20px;  
 }
 #hShip{
-    border:solid black;
-    width:15%;
+    border:solid black;    
+    width:7%;
 }
 #aShip{
     border:solid black;
-    width:15%;
+    width: 15%;
     left:0px;
     top:0px;
 }
 #textContent{
     width:50%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;   
+    font-size: 10px;   
     text-align: center;
+    margin-top: 10px;;
 }
 #startGameBtn{
-    width:30%;
-   
+    width:30%;   
     margin: 1em;
 }
