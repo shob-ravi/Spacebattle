@@ -5,17 +5,31 @@ height:100vh;
 }
 .topContainer{
     border:solid green;
-    height:78%;
+    height:60%;
 }
 .bottomContainer{
     border:solid black;
-    height:19%;
+    height:39%;
+    text-align: center;    
 }
 #hShip{
     border:solid black;
-    width:20%;
+    width:15%;
 }
 #aShip{
     border:solid black;
-    width:20%;
+    width:15%;
+    left:0px;
+    top:0px;
+}
+#textContent{
+    width:50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;   
+    text-align: center;
+}
+#startGameBtn{
+    width:30%;
+   
+    margin: 1em;
 }
