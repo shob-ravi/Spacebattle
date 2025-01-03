@@ -1,0 +1,13 @@
+.gameContainer{
+border:solid red;
+width: 100%;
+height:100vh;
+}
+.topContainer{
+    border:solid green;
+    height:78%;
+}
+.bottomContainer{
+    border:solid black;
+    height:19%;
+}
